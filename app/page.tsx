@@ -10,7 +10,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
   description:
-    'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no' },
 }
 

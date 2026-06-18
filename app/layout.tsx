@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.bergenbrannkonsult.no'),
   title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
   description:
-    'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: {
     canonical: 'https://www.bergenbrannkonsult.no',
   },
   openGraph: {
     title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
     description:
-      'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Bergen og Hordaland.',
+      'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
     url: 'https://www.bergenbrannkonsult.no',
     siteName: 'Bergen Brannkonsult',
     locale: 'nb_NO',
@@ -44,23 +44,54 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
+    description:
+      'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
+  },
 }
 
-const jsonLd = {
+// TODO: Fyll inn ekte verdier før lansering
+const TELEFON = '+47 000 00 000' // TODO: bytt til ekte nummer
+const GATEADRESSE = 'TODO: Gateadresse' // TODO: legg inn ekte gateadresse
+const POSTNUMMER = 'TODO: Postnummer' // TODO: legg inn ekte postnummer
+const SAME_AS_URLS: string[] = [
+  // TODO: legg inn URL til Google Business Profile, Facebook, LinkedIn
+]
+
+const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'ProfessionalService',
   name: 'Bergen Brannkonsult AS',
-  description: 'Brannprosjektering og brannkonsept i Bergen',
-  telephone: '+47 000 00 000',
+  legalName: 'Bergen Brannkonsult AS',
+  description: 'Sentralt godkjent brannrådgiverfirma med brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
+  foundingDate: '2013',
+  telephone: TELEFON,
   email: 'post@bergenbrannkonsult.no',
+  url: 'https://www.bergenbrannkonsult.no',
+  openingHours: 'Mo-Fr 08:00-16:00',
+  priceRange: 'Fra kr 15 000',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: GATEADRESSE,
     addressLocality: 'Bergen',
+    postalCode: POSTNUMMER,
     addressCountry: 'NO',
   },
+  areaServed: [
+    { '@type': 'City', name: 'Bergen' },
+    { '@type': 'AdministrativeArea', name: 'Hordaland' },
+    { '@type': 'AdministrativeArea', name: 'Vestland' },
+  ],
+  ...(SAME_AS_URLS.length > 0 && { sameAs: SAME_AS_URLS }),
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Bergen Brannkonsult',
   url: 'https://www.bergenbrannkonsult.no',
-  priceRange: 'Fra kr 15 000',
-  hasCredential: 'Sentralt godkjent tiltaksklasse 1 og 2',
 }
 
 export default function RootLayout({
@@ -73,7 +104,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className={lato.className}>

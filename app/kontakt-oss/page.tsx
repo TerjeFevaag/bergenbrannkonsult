@@ -11,9 +11,19 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/kontakt-oss' },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.bergenbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Kontakt oss', item: 'https://www.bergenbrannkonsult.no/kontakt-oss' },
+  ],
+}
+
 export default function KontaktOssPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">

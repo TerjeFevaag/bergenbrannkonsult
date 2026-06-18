@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle, ShieldCheck } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -34,9 +35,34 @@ const faqItems = [
   },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.bergenbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Uavhengig kontroll', item: 'https://www.bergenbrannkonsult.no/uavhengig-kontroll' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Uavhengig kontroll av brann',
+  description: 'Uavhengig kontroll (UK) av brannkonsept og brannprosjektering i tiltaksklasse 2 og høyere. Skriftlig kontrollrapport og erklæring om ansvarsrett.',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: 'Bergen Brannkonsult AS',
+    url: 'https://www.bergenbrannkonsult.no',
+  },
+  areaServed: { '@type': 'City', name: 'Bergen' },
+  serviceType: 'Uavhengig kontroll brann (SAK10)',
+}
+
 export default function UavhengigKontrollPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
@@ -59,7 +85,7 @@ export default function UavhengigKontrollPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Dette gir økt trygghet, reduserer risiko for feil og bidrar til en mer forutsigbar byggeprosess.
+                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Vi utfører UK brann for prosjekter i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — og i Hordaland for øvrig.
                 </p>
               </ScrollReveal>
 
@@ -137,6 +163,15 @@ export default function UavhengigKontrollPage() {
                       </a>
                     </div>
                   </div>
+                  <div className="mt-6 bg-brand-lightgray rounded-[30px] p-6">
+                    <p className="text-brand-darkgray text-xs mb-1">Pris</p>
+                    <p className="font-bold text-brand-black text-sm mb-1">
+                      {/* TODO: legg inn fra-pris når dette er avklart */}
+                      Fastpristilbud etter gjennomgang av brannkonseptet
+                    </p>
+                    <p className="text-brand-darkgray text-xs">Kontakt oss for uforpliktende estimat.</p>
+                  </div>
+
                   <div className="mt-6 bg-brand-lightgray rounded-[30px] p-8">
                     <h3 className="font-bold text-brand-black text-lg mb-4">Andre tjenester</h3>
                     <ul className="space-y-3">
@@ -150,6 +185,16 @@ export default function UavhengigKontrollPage() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+
+                  <div className="mt-6 flex justify-center">
+                    <Image
+                      src="/images/sentralt-godkjent.png"
+                      alt="Sentralt godkjent foretak"
+                      width={160}
+                      height={64}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </ScrollReveal>

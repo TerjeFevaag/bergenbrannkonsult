@@ -10,9 +10,20 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/artikler/pipebrann' },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.bergenbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Artikler', item: 'https://www.bergenbrannkonsult.no/artikler' },
+    { '@type': 'ListItem', position: 3, name: 'Forebygg pipebrann', item: 'https://www.bergenbrannkonsult.no/artikler/pipebrann' },
+  ],
+}
+
 export default function PipebrannPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="bg-brand-dark py-12 lg:py-16">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
@@ -118,7 +129,7 @@ export default function PipebrannPage() {
 
               <ScrollReveal>
                 <p className="leading-relaxed">
-                  Har du spørsmål om brannsikkerhet i din bolig eller ditt bygg? Bergen Brannkonsult er sentralt godkjente brannrådgivere og hjelper deg gjerne med brannkonsept, brannprosjektering og branntilsyn.{' '}
+                  Har du spørsmål om brannsikkerhet i din bolig eller ditt bygg? Bergen Brannkonsult er sentralt godkjente brannrådgivere og hjelper deg gjerne med brannkonsept, brannprosjektering og branninspeksjon.{' '}
                   <Link href="/kontakt-oss" className="text-brand-orange font-bold hover:underline">
                     Ta kontakt med oss her.
                   </Link>

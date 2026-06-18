@@ -7,8 +7,17 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Om Bergen Brannkonsult | Sentralt godkjent brannrådgiver',
   description:
-    'Bergen Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branntilsyn i Bergen og Hordaland.',
+    'Bergen Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/om-oss' },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.bergenbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Om oss', item: 'https://www.bergenbrannkonsult.no/om-oss' },
+  ],
 }
 
 const process = [
@@ -22,6 +31,7 @@ const process = [
 export default function OmOssPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">

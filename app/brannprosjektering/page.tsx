@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -39,9 +40,43 @@ const faqItems = [
   },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.bergenbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Brannprosjektering', item: 'https://www.bergenbrannkonsult.no/brannprosjektering' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Brannprosjektering',
+  description: 'Profesjonell brannprosjektering i Bergen og Hordaland. Brannkonsept, branntegninger og ansvarsrett i tiltaksklasse 1 og 2. Fast pris fra ca. 15 000 kr.',
+  offers: {
+    '@type': 'Offer',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      price: '15000',
+      priceCurrency: 'NOK',
+      description: 'Fra kr 15 000 ekskl. mva.',
+    },
+  },
+  provider: {
+    '@type': 'ProfessionalService',
+    name: 'Bergen Brannkonsult AS',
+    url: 'https://www.bergenbrannkonsult.no',
+  },
+  areaServed: { '@type': 'City', name: 'Bergen' },
+  serviceType: 'Brannprosjektering',
+}
+
 export default function BrannprosjekteringPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
@@ -64,7 +99,7 @@ export default function BrannprosjekteringPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg i Bergen oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris.
+                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg i Bergen oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris. Vi utfører oppdrag i hele Bergen, inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, samt i Hordaland for øvrig.
                 </p>
               </ScrollReveal>
 
@@ -171,6 +206,16 @@ export default function BrannprosjekteringPage() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+
+                  <div className="mt-6 flex justify-center">
+                    <Image
+                      src="/images/sentralt-godkjent.png"
+                      alt="Sentralt godkjent foretak"
+                      width={160}
+                      height={64}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </ScrollReveal>

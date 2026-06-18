@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FileText, Phone, Mail, CheckCircle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
@@ -44,9 +45,43 @@ const faqItems = [
   },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.bergenbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Brannkonsept', item: 'https://www.bergenbrannkonsult.no/brannkonsept' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Brannkonsept',
+  description: 'Utarbeidelse av brannkonsept og brannteknisk notat for byggesaker i Bergen og Hordaland. Inkluderer branntegninger og ansvarsrett i tiltaksklasse 1 og 2.',
+  offers: {
+    '@type': 'Offer',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      price: '15000',
+      priceCurrency: 'NOK',
+      description: 'Fra kr 15 000 ekskl. mva. i tiltaksklasse 2',
+    },
+  },
+  provider: {
+    '@type': 'ProfessionalService',
+    name: 'Bergen Brannkonsult AS',
+    url: 'https://www.bergenbrannkonsult.no',
+  },
+  areaServed: { '@type': 'City', name: 'Bergen' },
+  serviceType: 'Brannkonsept og brannteknisk prosjektering',
+}
+
 export default function BrannkonseptPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {/* Hero */}
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +107,7 @@ export default function BrannkonseptPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Bergen og omegn med å utarbeide komplette brannkonsept til fast pris.
+                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — med å utarbeide komplette brannkonsept til fast pris.
                 </p>
               </ScrollReveal>
 
@@ -196,6 +231,16 @@ export default function BrannkonseptPage() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+
+                  <div className="mt-6 flex justify-center">
+                    <Image
+                      src="/images/sentralt-godkjent.png"
+                      alt="Sentralt godkjent foretak"
+                      width={160}
+                      height={64}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </ScrollReveal>

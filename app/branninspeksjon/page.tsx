@@ -1,14 +1,38 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle, AlertTriangle } from 'lucide-react'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Branntilsyn og branninspeksjon i Bergen | Bergen Brannkonsult',
+  title: 'Branninspeksjon i Bergen | Bergen Brannkonsult',
   description:
-    'Branntilsyn og branninspeksjon i Bergen. Fått pålegg fra brannvesenet? Vi inspiserer bygningen og utarbeider tilstandsrapport og handlingsplan. Kontakt oss i dag.',
+    'Branninspeksjon i Bergen — få tilstandsrapport og handlingsplan for brannsikkerheten i ditt bygg. Fått pålegg fra brannvesenet? Vi hjelper deg. Sentralt godkjent foretak.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/branninspeksjon' },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.bergenbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Branninspeksjon', item: 'https://www.bergenbrannkonsult.no/branninspeksjon' },
+  ],
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Branninspeksjon',
+  description: 'Frivillig, grundig branninspeksjon av bygning. Vi utarbeider tilstandsrapport med avvik rangert etter alvorlighetsgrad og handlingsplan for utbedring.',
+  provider: {
+    '@type': 'ProfessionalService',
+    name: 'Bergen Brannkonsult AS',
+    url: 'https://www.bergenbrannkonsult.no',
+  },
+  areaServed: { '@type': 'City', name: 'Bergen' },
+  serviceType: 'Branninspeksjon og brannteknisk rådgivning',
 }
 
 const faqItems = [
@@ -42,6 +66,8 @@ const faqItems = [
 export default function BranninspeksjonPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <section className="bg-brand-dark py-16 lg:py-24">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-1 flex items-center gap-2 text-brand-orange text-sm mb-4">
@@ -50,7 +76,7 @@ export default function BranninspeksjonPage() {
             <span>Branninspeksjon</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Branntilsyn og branninspeksjon i Bergen
+            Branninspeksjon i Bergen
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
             Fått pålegg etter branntilsyn, eller ønsker du en grundig gjennomgang av byggets brannsikkerhet?
@@ -137,6 +163,15 @@ export default function BranninspeksjonPage() {
                       </a>
                     </div>
                   </div>
+                  <div className="mt-6 bg-brand-lightgray rounded-[30px] p-6">
+                    <p className="text-brand-darkgray text-xs mb-1">Pris</p>
+                    <p className="font-bold text-brand-black text-sm mb-1">
+                      {/* TODO: legg inn fra-pris når dette er avklart */}
+                      Fastpristilbud etter gjennomgang av bygget
+                    </p>
+                    <p className="text-brand-darkgray text-xs">Kontakt oss for uforpliktende estimat.</p>
+                  </div>
+
                   <div className="mt-6 bg-brand-lightgray rounded-[30px] p-8">
                     <h3 className="font-bold text-brand-black text-lg mb-4">Andre tjenester</h3>
                     <ul className="space-y-3">
@@ -151,6 +186,16 @@ export default function BranninspeksjonPage() {
                       ))}
                     </ul>
                   </div>
+
+                  <div className="mt-6 flex justify-center">
+                    <Image
+                      src="/images/sentralt-godkjent.png"
+                      alt="Sentralt godkjent foretak"
+                      width={160}
+                      height={64}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
               </ScrollReveal>
             </div>
@@ -162,7 +207,7 @@ export default function BranninspeksjonPage() {
         <section className="bg-brand-orange py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for hjelp etter branntilsyn i Bergen
+              Kontakt oss for branninspeksjon i Bergen
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-white text-brand-black font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
               Kontakt oss
