@@ -61,6 +61,11 @@ const faqItems = [
     answer:
       'Ja — alle eksisterende bygninger skal oppgraderes til et minimum tilsvarende det som gjaldt for nybygg i 1985 (BF85). For mange eldre bygg i Bergen betyr dette at det er behov for tiltak. Vi hjelper deg med å vurdere hva som er nødvendig.',
   },
+  {
+    question: 'Utfører dere branninspeksjon utenfor Bergen?',
+    answer:
+      'Ja — vi er basert i Bergen, men utfører branninspeksjon i hele Hordaland og tar oppdrag over hele Norge. Ta kontakt uansett hvor bygget befinner seg, så vurderer vi den beste fremgangsmåten.',
+  },
 ]
 
 export default function BranninspeksjonPage() {
@@ -90,7 +95,7 @@ export default function BranninspeksjonPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning i Bergen? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere med branninspeksjon og vurdering av byggets brannsikkerhet.
+                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere i Bergen, Hordaland og hele Norge med branninspeksjon og vurdering av byggets brannsikkerhet.
                 </p>
               </ScrollReveal>
 

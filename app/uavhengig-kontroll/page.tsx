@@ -33,6 +33,11 @@ const faqItems = [
     answer:
       'Ja — det er faktisk et krav at den som utfører UK ikke er den samme som har prosjektert. Vi kan ta på oss uavhengig kontroll av brannkonsept utarbeidet av andre rådgivere.',
   },
+  {
+    question: 'Tar dere oppdrag utenfor Bergen?',
+    answer:
+      'Ja — vi har base i Bergen, men utfører uavhengig kontroll for prosjekter i hele Hordaland og over hele Norge. Kontrollarbeidet baseres på oversendte tegninger og dokumenter, noe som gjør det enkelt å gjennomføre uten geografiske begrensninger. Ta kontakt uansett hvor prosjektet ditt befinner seg.',
+  },
 ]
 
 const breadcrumbSchema = {
@@ -85,7 +90,7 @@ export default function UavhengigKontrollPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Vi utfører UK brann for prosjekter i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — og i Hordaland for øvrig.
+                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Vi er basert i Bergen og utfører UK brann for prosjekter i Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, i hele Hordaland og over hele Norge.
                 </p>
               </ScrollReveal>
 

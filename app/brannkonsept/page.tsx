@@ -43,6 +43,11 @@ const faqItems = [
     answer:
       'Leveringstid avhenger av prosjektets omfang og vår arbeidsbelastning. For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt bestilling og komplett underlag. Har du tidsfrist, oppgi dette i forespørselen.',
   },
+  {
+    question: 'Tar dere oppdrag utenfor Bergen?',
+    answer:
+      'Ja — vi har base i Bergen, men tar oppdrag i hele Hordaland, Vestland og resten av Norge. Takket være digitale verktøy og kartdata trenger vi sjelden å besøke prosjektstedet fysisk, noe som gjør det enkelt å betjene kunder over hele landet. Ta kontakt uansett hvor prosjektet ditt befinner seg.',
+  },
 ]
 
 const breadcrumbSchema = {
@@ -107,7 +112,7 @@ export default function BrannkonseptPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — med å utarbeide komplette brannkonsept til fast pris.
+                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — og i resten av Hordaland og Norge, med å utarbeide komplette brannkonsept til fast pris.
                 </p>
               </ScrollReveal>
 

@@ -38,6 +38,11 @@ const faqItems = [
     answer:
       'Vi trenger adresse, antall etasjer og bruksareal, plantegninger og en kort prosjektbeskrivelse. Jo mer informasjon vi får, jo mer presist kan vi prise oppdraget. Send det til oss på e-post eller via kontaktskjemaet.',
   },
+  {
+    question: 'Tar dere oppdrag utenfor Bergen?',
+    answer:
+      'Ja — vi har base i Bergen, men leverer brannprosjektering i hele Hordaland, Vestland og over hele Norge. De fleste oppdrag løses uten befaring takket være digitale tegningsunderlag og kartdata. Kontakt oss uansett hvor prosjektet ditt er.',
+  },
 ]
 
 const breadcrumbSchema = {
@@ -99,7 +104,7 @@ export default function BrannprosjekteringPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg i Bergen oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris. Vi utfører oppdrag i hele Bergen, inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, samt i Hordaland for øvrig.
+                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris. Vi er basert i Bergen og betjener kunder i Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, i hele Hordaland, og tar oppdrag over hele Norge.
                 </p>
               </ScrollReveal>
 
