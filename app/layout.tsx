@@ -67,7 +67,7 @@ const organizationSchema = {
   description: 'Sentralt godkjent brannrådgiverfirma med brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
   foundingDate: '2013',
   telephone: TELEFON,
-  email: 'post@brannkonsult.no',
+  email: 'post@bergenbrannkonsult.no',
   url: 'https://www.bergenbrannkonsult.no',
   openingHours: 'Mo-Fr 08:00-16:00',
   priceRange: 'Fra kr 15 000',

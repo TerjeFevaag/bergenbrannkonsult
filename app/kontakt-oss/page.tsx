@@ -56,7 +56,7 @@ export default function KontaktOssPage() {
                 <div className="space-y-5">
                   {[
                     { icon: Phone, label: 'Telefon', value: '+47 484 81 914', href: 'tel:+4748481914' },
-                    { icon: Mail, label: 'E-post', value: 'post@brannkonsult.no', href: 'mailto:post@brannkonsult.no' },
+                    { icon: Mail, label: 'E-post', value: 'post@bergenbrannkonsult.no', href: 'mailto:post@bergenbrannkonsult.no' },
                     { icon: MapPin, label: 'Postadresse', value: 'Haakon VII\'s gate 6, 0161 Oslo', href: null },
                     { icon: Clock, label: 'Åpningstider', value: 'Man–Fre 08:00–16:00', href: null },
                   ].map(({ icon: Icon, label, value, href }, i) => (

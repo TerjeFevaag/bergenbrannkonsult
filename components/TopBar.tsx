@@ -39,11 +39,11 @@ export default function TopBar() {
             <span>+47 484 81 914</span>
           </a>
           <a
-            href="mailto:post@brannkonsult.no"
+            href="mailto:post@bergenbrannkonsult.no"
             className="hidden sm:flex items-center gap-1.5 hover:text-brand-orange transition-colors"
           >
             <Mail size={13} />
-            <span>post@brannkonsult.no</span>
+            <span>post@bergenbrannkonsult.no</span>
           </a>
         </div>
         <div className="flex items-center gap-3">
