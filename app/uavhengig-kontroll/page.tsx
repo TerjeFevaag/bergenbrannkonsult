@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle, ShieldCheck } from 'lucide-react'
@@ -160,11 +160,11 @@ export default function UavhengigKontrollPage() {
                       Kontakt oss
                     </Link>
                     <div className="space-y-3 pt-4 border-t border-brand-white/10">
-                      <a href="tel:+4700000000" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
-                        <Phone size={14} /> +47 000 00 000
+                      <a href="tel:+4748481914" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
+                        <Phone size={14} /> +47 484 81 914
                       </a>
-                      <a href="mailto:post@bergenbrannkonsult.no" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
-                        <Mail size={14} /> post@bergenbrannkonsult.no
+                      <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 text-brand-white/60 hover:text-brand-orange transition-colors text-sm">
+                        <Mail size={14} /> post@brannkonsult.no
                       </a>
                     </div>
                   </div>

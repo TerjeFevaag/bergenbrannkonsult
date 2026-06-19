@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Lato, Dancing_Script } from 'next/font/google'
 import './globals.css'
 import TopBar from '@/components/TopBar'
@@ -52,10 +52,9 @@ export const metadata: Metadata = {
   },
 }
 
-// TODO: Fyll inn ekte verdier før lansering
-const TELEFON = '+47 000 00 000' // TODO: bytt til ekte nummer
-const GATEADRESSE = 'TODO: Gateadresse' // TODO: legg inn ekte gateadresse
-const POSTNUMMER = 'TODO: Postnummer' // TODO: legg inn ekte postnummer
+const TELEFON = '+47 484 81 914'
+const GATEADRESSE = 'Haakon VII\'s gate 6'
+const POSTNUMMER = '0161'
 const SAME_AS_URLS: string[] = [
   // TODO: legg inn URL til Google Business Profile, Facebook, LinkedIn
 ]
@@ -68,14 +67,14 @@ const organizationSchema = {
   description: 'Sentralt godkjent brannrådgiverfirma med brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
   foundingDate: '2013',
   telephone: TELEFON,
-  email: 'post@bergenbrannkonsult.no',
+  email: 'post@brannkonsult.no',
   url: 'https://www.bergenbrannkonsult.no',
   openingHours: 'Mo-Fr 08:00-16:00',
   priceRange: 'Fra kr 15 000',
   address: {
     '@type': 'PostalAddress',
     streetAddress: GATEADRESSE,
-    addressLocality: 'Bergen',
+    addressLocality: 'Oslo',
     postalCode: POSTNUMMER,
     addressCountry: 'NO',
   },

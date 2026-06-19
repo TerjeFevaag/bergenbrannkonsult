@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react'
@@ -349,7 +349,7 @@ export default function HomePage() {
               Få gratis tilbud
             </Link>
             <a
-              href="tel:+4700000000"
+              href="tel:+4748481914"
               className="border-2 border-brand-white text-brand-white font-bold px-8 py-3.5 rounded-[10px] hover:bg-brand-white hover:text-brand-black transition-all duration-200 flex items-center gap-2"
             >
               <Phone size={16} /> Ring oss

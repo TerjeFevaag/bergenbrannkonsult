@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle, Phone, Mail, MapPin } from 'lucide-react'
@@ -182,11 +182,11 @@ export default function OmOssPage() {
                 <div className="space-y-2 text-brand-white/60 text-sm">
                   <div className="flex items-center gap-2">
                     <Phone size={14} />
-                    <a href="tel:+4700000000" className="hover:text-brand-orange transition-colors">+47 000 00 000</a>
+                    <a href="tel:+4748481914" className="hover:text-brand-orange transition-colors">+47 484 81 914</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail size={14} />
-                    <a href="mailto:post@bergenbrannkonsult.no" className="hover:text-brand-orange transition-colors">post@bergenbrannkonsult.no</a>
+                    <a href="mailto:post@brannkonsult.no" className="hover:text-brand-orange transition-colors">post@brannkonsult.no</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin size={14} />

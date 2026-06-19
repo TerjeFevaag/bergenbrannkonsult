@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Kontakt Bergen Brannkonsult | Få uforpliktende tilbud',
   description:
-    'Kontakt Bergen Brannkonsult for uforpliktende tilbud på brannkonsept og brannprosjektering i Bergen. Vi svarer innen 24 timer. Ring +47 000 00 000.',
+    'Kontakt Bergen Brannkonsult for uforpliktende tilbud på brannkonsept og brannprosjektering i Bergen. Vi svarer innen 24 timer. Ring +47 484 81 914.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/kontakt-oss' },
 }
 
@@ -55,9 +55,9 @@ export default function KontaktOssPage() {
                 <h3 className="font-bold text-brand-black text-lg mb-6">Kontaktinformasjon</h3>
                 <div className="space-y-5">
                   {[
-                    { icon: Phone, label: 'Telefon', value: '+47 000 00 000', href: 'tel:+4700000000' },
-                    { icon: Mail, label: 'E-post', value: 'post@bergenbrannkonsult.no', href: 'mailto:post@bergenbrannkonsult.no' },
-                    { icon: MapPin, label: 'Adresse', value: '[Gateadresse], Bergen', href: null },
+                    { icon: Phone, label: 'Telefon', value: '+47 484 81 914', href: 'tel:+4748481914' },
+                    { icon: Mail, label: 'E-post', value: 'post@brannkonsult.no', href: 'mailto:post@brannkonsult.no' },
+                    { icon: MapPin, label: 'Postadresse', value: 'Haakon VII\'s gate 6, 0161 Oslo', href: null },
                     { icon: Clock, label: 'Åpningstider', value: 'Man–Fre 08:00–16:00', href: null },
                   ].map(({ icon: Icon, label, value, href }, i) => (
                     <div key={i} className="flex items-start gap-4">

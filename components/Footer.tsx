@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import { Phone, Mail } from 'lucide-react'
 
@@ -103,11 +103,11 @@ export default function Footer() {
             </ul>
 
             <div className="mt-6 space-y-2 text-sm text-brand-white/60">
-              <a href="tel:+4700000000" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
-                <Phone size={13} /> +47 000 00 000
+              <a href="tel:+4748481914" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+                <Phone size={13} /> +47 484 81 914
               </a>
-              <a href="mailto:post@bergenbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
-                <Mail size={13} /> post@bergenbrannkonsult.no
+              <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+                <Mail size={13} /> post@brannkonsult.no
               </a>
             </div>
           </div>
