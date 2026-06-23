@@ -5,9 +5,9 @@ import { CheckCircle, Phone, Mail, MapPin } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Om Bergen Brannkonsult | Sentralt godkjent brannrådgiver',
+  title: 'Hvem er vi? | Sentralt godkjent brannrådgiver',
   description:
-    'Bergen Brannkonsult er et sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013. Vi tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
+    'Bergen Brannkonsult er et Sentralt godkjent brannrådgiverfirma med over 1 200 prosjekter siden 2013. Vi hjelper privatpersoner, arkitekter og utbyggere med å få byggesaken i mål — raskt og til fast pris. Vi tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/om-oss' },
 }
 
@@ -41,10 +41,10 @@ export default function OmOssPage() {
             <span>Om oss</span>
           </div>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl font-black max-w-2xl">
-            Om Bergen Brannkonsult
+            Hvem er vi?
           </h1>
           <p className="hero-3 text-brand-white/70 text-lg mt-4 max-w-xl leading-relaxed">
-            Sentralt godkjent brannrådgiverfirma med over 1200 prosjekter siden 2013.
+            Sentralt godkjent brannrådgiverfirma med over 1 200 prosjekter siden 2013. Vi hjelper privatpersoner, arkitekter og utbyggere med å få byggesaken i mål — raskt og til fast pris.
           </p>
         </div>
       </section>
