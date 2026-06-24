@@ -1,12 +1,12 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Har du riktig brannslokkeapparat? | Bergen Brannkonsult',
+  title: 'Har du riktig brannslokkeapparat? | Brannkonsult AS',
   description:
-    'Hvilken type brannslokker trenger du? Vi gjennomgår krav til brannslokking i boliger, forskjellen mellom pulver og skum, og riktig bruk. Råd fra Bergen Brannkonsult.',
+    'Hvilken type brannslokker trenger du? Vi gjennomgår krav til brannslokking i boliger, forskjellen mellom pulver og skum, og riktig bruk. Råd fra Brannkonsult AS.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/artikler/brannslokker' },
 }
 
@@ -126,7 +126,7 @@ export default function BrannslokkePage() {
                 <p className="leading-relaxed">
                   Trenger du hjelp med brannteknisk rådgivning for din eiendom?{' '}
                   <Link href="/kontakt-oss" className="text-brand-orange font-bold hover:underline">
-                    Kontakt Bergen Brannkonsult
+                    Kontakt Brannkonsult AS
                   </Link>{' '}
                   for en uforpliktende vurdering.
                 </p>

@@ -8,9 +8,9 @@ import ReviewCard from '@/components/ReviewCard'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
+  title: 'Brannprosjektering i Bergen | Brannkonsult AS',
   description:
-    'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no' },
 }
 
@@ -84,7 +84,7 @@ const reviews = [
   },
   {
     quote:
-      'Bergen Brannkonsult er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
+      'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
     author: 'Daniel Hagelin',
     company: 'Hagelin Byggservice',
   },

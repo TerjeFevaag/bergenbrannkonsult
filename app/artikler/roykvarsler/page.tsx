@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Riktig røykvarsler redder liv | Bergen Brannkonsult',
+  title: 'Riktig røykvarsler redder liv | Brannkonsult AS',
   description:
     'Krav til røykvarslere i norske boliger, forskjell mellom ionisasjon og optisk varsler, og anbefalt plassering. Råd fra sentralt godkjente brannrådgivere i Bergen.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/artikler/roykvarsler' },
@@ -85,7 +85,7 @@ export default function RoykVarslerPage() {
 
               <ScrollReveal>
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
-                  <h3 className="font-bold text-brand-black text-lg mb-3">Anbefaling fra Bergen Brannkonsult</h3>
+                  <h3 className="font-bold text-brand-black text-lg mb-3">Anbefaling fra Brannkonsult AS</h3>
                   <p className="text-brand-darkgray text-sm leading-relaxed">
                     Velg optiske røykvarslere for boliger. De oppdager ulmebranner — den vanligste typen — raskere og gir færre falske alarmer. Sørg for at alle varslere er koblet sammen (radio- eller kabelforbundet) slik at alle alarmer går av samtidig.
                   </p>
@@ -127,7 +127,7 @@ export default function RoykVarslerPage() {
                 <p className="leading-relaxed">
                   Trenger du brannteknisk vurdering av en eiendom i Bergen?{' '}
                   <Link href="/kontakt-oss" className="text-brand-orange font-bold hover:underline">
-                    Ta kontakt med Bergen Brannkonsult
+                    Ta kontakt med Brannkonsult AS
                   </Link>{' '}
                   for en uforpliktende prat.
                 </p>

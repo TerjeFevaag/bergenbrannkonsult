@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
+  title: 'Brannprosjektering i Bergen | Brannkonsult AS',
   description:
     'Profesjonell brannprosjektering i Bergen og Hordaland. Sentralt godkjent TKL 1+2. Fast pris fra ca. 15 000 kr. Tilbygg, bruksendring, nybygg.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/brannprosjektering' },
@@ -70,7 +70,7 @@ const serviceSchema = {
   },
   provider: {
     '@type': 'ProfessionalService',
-    name: 'Bergen Brannkonsult AS',
+    name: 'Brannkonsult AS AS',
     url: 'https://www.bergenbrannkonsult.no',
   },
   areaServed: { '@type': 'City', name: 'Bergen' },

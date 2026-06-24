@@ -21,18 +21,18 @@ const dancing = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bergenbrannkonsult.no'),
-  title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
+  title: 'Brannprosjektering i Bergen | Brannkonsult AS',
   description:
-    'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
+    'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland. Sentralt godkjent foretak. Få uforpliktende tilbud i dag.',
   alternates: {
     canonical: 'https://www.bergenbrannkonsult.no',
   },
   openGraph: {
-    title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
+    title: 'Brannprosjektering i Bergen | Brannkonsult AS',
     description:
-      'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
+      'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
     url: 'https://www.bergenbrannkonsult.no',
-    siteName: 'Bergen Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
     images: [
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
         url: '/images/hero.avif',
         width: 1200,
         height: 630,
-        alt: 'Bergen Brannkonsult',
+        alt: 'Brannkonsult AS',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Brannprosjektering i Bergen | Bergen Brannkonsult',
+    title: 'Brannprosjektering i Bergen | Brannkonsult AS',
     description:
-      'Bergen Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
+      'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
   },
 }
 
@@ -62,8 +62,8 @@ const SAME_AS_URLS: string[] = [
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Bergen Brannkonsult AS',
-  legalName: 'Bergen Brannkonsult AS',
+  name: 'Brannkonsult AS',
+  legalName: 'Brannkonsult AS',
   description: 'Sentralt godkjent brannrådgiverfirma med brannkonsept, brannprosjektering og branninspeksjon i Bergen og Hordaland.',
   foundingDate: '2013',
   telephone: TELEFON,
@@ -89,7 +89,7 @@ const organizationSchema = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Bergen Brannkonsult',
+  name: 'Brannkonsult AS',
   url: 'https://www.bergenbrannkonsult.no',
 }
 

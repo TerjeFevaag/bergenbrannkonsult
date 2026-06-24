@@ -6,7 +6,7 @@ import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll av brann i Bergen | Bergen Brannkonsult',
+  title: 'Uavhengig kontroll av brann i Bergen | Brannkonsult AS',
   description:
     'Uavhengig kontroll (UK) av brannkonsept i Bergen. Sentralt godkjent foretak. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17. Fast pris.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/uavhengig-kontroll' },
@@ -56,7 +56,7 @@ const serviceSchema = {
   description: 'Uavhengig kontroll (UK) av brannkonsept og brannprosjektering i tiltaksklasse 2 og høyere. Skriftlig kontrollrapport og erklæring om ansvarsrett.',
   provider: {
     '@type': 'ProfessionalService',
-    name: 'Bergen Brannkonsult AS',
+    name: 'Brannkonsult AS AS',
     url: 'https://www.bergenbrannkonsult.no',
   },
   areaServed: { '@type': 'City', name: 'Bergen' },
