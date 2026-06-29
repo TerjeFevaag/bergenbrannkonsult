@@ -70,7 +70,7 @@ const serviceSchema = {
   },
   provider: {
     '@type': 'ProfessionalService',
-    name: 'Brannkonsult AS AS',
+    name: 'Brannkonsult AS',
     url: 'https://www.bergenbrannkonsult.no',
   },
   areaServed: { '@type': 'City', name: 'Bergen' },

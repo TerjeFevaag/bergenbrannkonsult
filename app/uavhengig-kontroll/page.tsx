@@ -56,7 +56,7 @@ const serviceSchema = {
   description: 'Uavhengig kontroll (UK) av brannkonsept og brannprosjektering i tiltaksklasse 2 og høyere. Skriftlig kontrollrapport og erklæring om ansvarsrett.',
   provider: {
     '@type': 'ProfessionalService',
-    name: 'Brannkonsult AS AS',
+    name: 'Brannkonsult AS',
     url: 'https://www.bergenbrannkonsult.no',
   },
   areaServed: { '@type': 'City', name: 'Bergen' },
