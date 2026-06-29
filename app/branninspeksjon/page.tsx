@@ -8,7 +8,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Branninspeksjon i Bergen | Brannkonsult AS',
   description:
-    'Branninspeksjon i Bergen — få tilstandsrapport og handlingsplan for brannsikkerheten i ditt bygg. Fått pålegg fra brannvesenet? Vi hjelper deg. Sentralt godkjent foretak.',
+    'Branninspeksjon i Bergen og Hordaland. Tilstandsrapport med avvik og handlingsplan. Fått pålegg fra brannvesenet? Vi hjelper deg raskt. Sentralt godkjent foretak.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/branninspeksjon' },
 }
 

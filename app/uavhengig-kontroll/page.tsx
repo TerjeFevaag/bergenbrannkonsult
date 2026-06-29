@@ -8,7 +8,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Uavhengig kontroll av brann i Bergen | Brannkonsult AS',
   description:
-    'Uavhengig kontroll (UK) av brannkonsept i Bergen. Sentralt godkjent foretak. Vi gjennomgår brannkonsept, branntegninger og løsningsvalg mot TEK17. Fast pris.',
+    'Uavhengig kontroll av brann (UK) i Bergen og Hordaland. Krav om UK i TKL 2? Vi gjennomgår brannkonsept og branntegninger mot TEK17. Fastpristilbud.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/uavhengig-kontroll' },
 }
 

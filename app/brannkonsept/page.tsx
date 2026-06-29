@@ -8,7 +8,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   title: 'Brannkonsept i Bergen | Brannkonsult AS',
   description:
-    'Brannkonsult AS utarbeider brannkonsept i Bergen og Hordaland. Sentralt godkjent TKL 1+2. Fra ca. 15 000 kr inkl. branntegninger. Fastpris alltid.',
+    'Brannkonsept i Bergen, Hordaland og Vestland. Sentralt godkjent TKL 1+2. Fastpristilbud fra kr 15 000 inkl. branntegninger — svar innen 24 timer.',
   alternates: { canonical: 'https://www.bergenbrannkonsult.no/brannkonsept' },
 }
 
