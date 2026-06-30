@@ -83,6 +83,12 @@ export default function Footer() {
           <p className="text-brand-white/40 text-sm">
             © {new Date().getFullYear()} Brannkonsult AS. Alle rettigheter forbeholdt.
           </p>
+          <p className="text-brand-white/25 text-xs">
+            Utviklet av{' '}
+            <a href="https://fevaag.no/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-white/50 transition-colors">
+              Fevaag Web Consulting
+            </a>
+          </p>
           <Image
             src="/images/sentralt-godkjent.png"
             alt="Sentralt godkjent"
