@@ -293,7 +293,7 @@ export default function HomePage() {
           <ScrollReveal className="flex items-end justify-between mb-10">
             <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Nyttige artikler</h2>
             <Link
-              href="/artikler/pipebrann"
+              href="/artikler"
               className="text-brand-orange font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
             >
               Se alle <ArrowRight size={16} />
