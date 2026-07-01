@@ -42,7 +42,7 @@ const faqItems = [
     question: 'Hvor finner jeg mer faglig informasjon om uavhengig kontroll av brann?',
     answer: '',
     answerHtml:
-      'Vi har samlet utfyllende informasjon om hva uavhengig kontroll innebærer, hvilke krav som gjelder og hva du kan forvente av prosessen. Se <a href="https://www.brannkonsult.no/uavhengig-kontroll/" class="text-brand-orange hover:underline">fagartikkelen om uavhengig kontroll av brann</a> for mer informasjon.',
+      'Vi har samlet utfyllende informasjon om hva uavhengig kontroll innebærer, hvilke krav som gjelder og hva du kan forvente av prosessen. Se <a href="https://www.brannkonsult.no/uavhengig-kontroll-brannkonsept/" class="text-brand-orange hover:underline">fagartikkelen om uavhengig kontroll av brann</a> for mer informasjon.',
   },
 ]
 
