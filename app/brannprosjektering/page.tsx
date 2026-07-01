@@ -103,8 +103,11 @@ export default function BrannprosjekteringPage() {
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="lg:w-[65%]">
               <ScrollReveal>
+                <p className="text-brand-darkgray text-lg leading-relaxed mb-4">
+                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg oppfyller alle krav i plan- og bygningsloven og brann- og eksplosjonsvernloven — til fast pris. Vi er basert i Bergen og betjener kunder i Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, i hele Hordaland, og tar oppdrag over hele Norge.
+                </p>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Brannprosjektering betyr skriftlig planlegging av nødvendig brannsikring i og rundt bygningen. Vi sørger for at ditt bygg oppfyller alle krav i <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">plan- og bygningsloven og brann- og eksplosjonsvernloven</a> — til fast pris. Vi er basert i Bergen og betjener kunder i Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, i hele Hordaland, og tar oppdrag over hele Norge.
+                  Ønsker du å sette deg inn i hva brannprosjektering innebærer før du tar kontakt, anbefaler vi vår <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange hover:underline">komplette guide om brannprosjektering</a>.
                 </p>
               </ScrollReveal>
 
