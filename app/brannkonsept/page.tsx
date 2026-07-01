@@ -48,6 +48,12 @@ const faqItems = [
     answer:
       'Ja — vi har base i Bergen, men tar oppdrag i hele Hordaland, Vestland og resten av Norge. Takket være digitale verktøy og kartdata trenger vi sjelden å besøke prosjektstedet fysisk, noe som gjør det enkelt å betjene kunder over hele landet. Ta kontakt uansett hvor prosjektet ditt befinner seg.',
   },
+  {
+    question: 'Hva bør jeg vite om brannkonsept før jeg bestiller?',
+    answer: '',
+    answerHtml:
+      'Et brannkonsept skal dokumentere at bygget ditt oppfyller kravene i TEK17. Vi har samlet en grundig gjennomgang av hva et brannkonsept inneholder og hva du som byggherre bør kjenne til — se <a href="https://www.brannkonsult.no/brannkonsept/" class="text-brand-orange hover:underline">vår faglige gjennomgang av brannkonsept</a> for mer informasjon.',
+  },
 ]
 
 const breadcrumbSchema = {
@@ -112,7 +118,7 @@ export default function BrannkonseptPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">brannkonseptnivå</a> — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — og i resten av Hordaland og Norge, med å utarbeide komplette brannkonsept til fast pris.
+                  Skal du søke om byggetillatelse? Da krever kommunen brannteknisk dokumentasjon — og det er her vi kommer inn. Vi utarbeider komplette brannkonsept for private, arkitekter, entreprenører og utbyggere i Bergen og Hordaland. Med oss på laget får du en erfaren brannrådgiver som kjenner både regelverket og de lokale byggeskikkene — fra de historiske trehusene i Sandviken til moderne leilighetsbygg på Mindemyren. Fastpris, rask levering, og svar innen 24 timer.
                 </p>
               </ScrollReveal>
 
