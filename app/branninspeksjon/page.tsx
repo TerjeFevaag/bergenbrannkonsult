@@ -95,7 +95,7 @@ export default function BranninspeksjonPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere i Bergen, Hordaland og hele Norge med branninspeksjon og vurdering av byggets brannsikkerhet.
+                  Har kommunen vært på branntilsyn, eller ønsker du å kartlegge brannsikkerheten i en eldre bygning? Vi hjelper borettslag, sameier, næringsbygg og eiendomseiere i Bergen, Hordaland og hele Norge med <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange hover:underline">branninspeksjon</a> og vurdering av byggets brannsikkerhet.
                 </p>
               </ScrollReveal>
 

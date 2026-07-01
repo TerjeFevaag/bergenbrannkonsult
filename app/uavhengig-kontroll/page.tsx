@@ -90,7 +90,7 @@ export default function UavhengigKontrollPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  I mange byggeprosjekter er det krav om uavhengig kontroll (UK) av brannsikkerheten. Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Vi er basert i Bergen og utfører UK brann for prosjekter i Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, i hele Hordaland og over hele Norge.
+                  I mange byggeprosjekter er det krav om <a href="https://www.brannkonsult.no/uavhengig-kontroll/" className="text-brand-orange hover:underline">uavhengig kontroll av brann</a> (UK). Kontrollen skal sikre at brannkonseptet er i tråd med gjeldende forskrifter og at prosjekteringen holder nødvendig kvalitet. Vi er basert i Bergen og utfører UK brann for prosjekter i Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda, i hele Hordaland og over hele Norge.
                 </p>
               </ScrollReveal>
 

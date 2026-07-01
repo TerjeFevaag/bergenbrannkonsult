@@ -112,7 +112,7 @@ export default function BrannkonseptPage() {
             <div className="lg:w-[65%]">
               <ScrollReveal>
                 <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på brannkonseptnivå — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — og i resten av Hordaland og Norge, med å utarbeide komplette brannkonsept til fast pris.
+                  Et brannkonsept er en skriftlig rapport som oppsummerer bygningens brannsikkerhetsnivå. Ved byggesaker krever kommunen som regel prosjekteringsdokumentasjon på <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange hover:underline">brannkonseptnivå</a> — en helhetlig overordnet plan som ivaretar brannsikkerheten både for det omsøkte tiltaket og den øvrige bygningsmassen. Vi hjelper private, arkitekter, entreprenører og utbyggere i Bergen — inkludert Åsane, Fana, Fyllingsdalen, Laksevåg og Ytrebygda — og i resten av Hordaland og Norge, med å utarbeide komplette brannkonsept til fast pris.
                 </p>
               </ScrollReveal>
 
