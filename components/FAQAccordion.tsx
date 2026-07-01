@@ -6,6 +6,7 @@ import { Plus, Minus } from 'lucide-react'
 interface FAQItem {
   question: string
   answer: string
+  answerHtml?: string
 }
 
 export default function FAQAccordion({ items }: { items: FAQItem[] }) {
@@ -41,7 +42,9 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
             >
               <div className="min-h-0">
                 <div className="mt-4 text-brand-darkgray leading-relaxed text-base pr-8 pb-1">
-                  {item.answer}
+                  {item.answerHtml
+                    ? <span dangerouslySetInnerHTML={{ __html: item.answerHtml }} />
+                    : item.answer}
                 </div>
               </div>
             </div>
