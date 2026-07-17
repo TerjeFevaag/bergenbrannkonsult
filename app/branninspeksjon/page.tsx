@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle, AlertTriangle } from 'lucide-react'
@@ -39,27 +39,27 @@ const faqItems = [
   {
     question: 'Hva er forskjellen på branntilsyn og branninspeksjon?',
     answer:
-      'Branntilsyn er en kontroll utført av kommunens brann- og redningsetat. Branninspeksjon er en frivillig, grundigere gjennomgang du kan bestille fra en privat brannrådgiver som oss. Vi gir en uavhengig vurdering av byggets brannsikkerhet og konkrete anbefalinger.',
+      'Branntilsyn er en kontroll utført av Bergen brannvesen. Det er en stikkprøvekontroll — brannvesenet ser på utvalgte forhold og har begrenset tid. En branninspeksjon utført av oss er en grundigere, uavhengig gjennomgang der vi dokumenterer alle avvik og gir deg en konkret plan for å lukke dem.',
   },
   {
-    question: 'Hvem er ansvarlig for brannsikkerheten i et sameie?',
+    question: 'Hvem er ansvarlig for brannsikkerheten i et sameie eller borettslag?',
     answer:
-      'Styret i sameiet er ansvarlig for at fellesarealene oppfyller brannkravene. Beboere er ansvarlige for sine egne enheter. Vi hjelper sameier og borettslag med å kartlegge status og utarbeide en handlingsplan for nødvendige utbedringer.',
+      'Styret er ansvarlig for at fellesarealene oppfyller brannkravene. Beboere er ansvarlige for sine egne enheter. Vi hjelper sameier og borettslag i Bergen med å kartlegge status og utarbeide en handlingsplan for nødvendige utbedringer.',
   },
   {
     question: 'Hva skjer hvis bygget ikke oppfyller kravene?',
     answer:
-      'Brannvesenet kan gi pålegg om utbedring med frist. Dersom pålegg ikke etterkommes, kan brannvesenet i ytterste konsekvens stenge bygget. Vi hjelper deg med å forstå pålegget og utarbeide en kostnadseffektiv plan for å lukke avvikene.',
+      'Bergen brannvesen kan gi pålegg om utbedring med frist. Dersom pålegg ikke etterkommes, kan brannvesenet i ytterste konsekvens stenge bygget. Vi hjelper deg med å forstå pålegget og utarbeider nødvendig dokumentasjon.',
   },
   {
     question: 'Hva koster en branninspeksjon?',
     answer:
-      'Kostnaden avhenger av byggets størrelse og kompleksitet. Vi gir et fastpristilbud etter å ha mottatt informasjon om bygget. Ta kontakt for en uforpliktende prat og estimat.',
+      'Kostnaden avhenger av byggets størrelse og kompleksitet. Vi gir fastpristilbud etter å ha mottatt informasjon om bygget. Ta kontakt for et uforpliktende estimat.',
   },
   {
     question: 'Gjelder oppgraderingskravet for alle eldre bygninger?',
     answer:
-      'Ja — alle eksisterende bygninger skal oppgraderes til et minimum tilsvarende det som gjaldt for nybygg i 1985 (BF85). For mange eldre bygg i Bergen betyr dette at det er behov for tiltak. Vi hjelper deg med å vurdere hva som er nødvendig.',
+      'Ja — alle eksisterende bygninger skal oppgraderes til et minimum tilsvarende det som gjaldt for nybygg i 1985 (BF85). Bergen har mange vernede og eldre trebygninger der dette kan kreve særskilte tilpasninger. Vi hjelper deg med å vurdere hva som er nødvendig og hvilke løsninger kommunen aksepterer.',
   },
   {
     question: 'Hvor kan jeg lese mer om hva en branninspeksjon innebærer?',
@@ -106,9 +106,9 @@ export default function BranninspeksjonPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Krav til oppgradering</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Bergen har mange eldre bygg — og det stiller krav</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Alle bygninger i Norge skal tilfredsstille et minimum brannsikkerhetsnivå tilsvarende det som gjaldt for nybygg i 1985 (BF85). Eldre bygg som ikke oppfyller dette kravet skal utbedres. Bergen har mange verneverdige og eldre bygninger som kan ha behov for branntekniske tiltak.
+                  Alle bygninger i Norge skal tilfredsstille et minimum brannsikkerhetsnivå tilsvarende det som gjaldt for nybygg i 1985 (BF85). For Bergen betyr dette at et stort antall bygninger — trebygninger fra 1800-tallet i Sandviken og på Nordnes, eldre leiegårder i Nygårdstangen og Møhlenpris, næringsbygg langs havnefronten — kan ha behov for branntekniske tiltak. Eier er ansvarlig for at kravene er oppfylt. En branninspeksjon gir deg oversikten du trenger for å vite hvor du står.
                 </p>
               </ScrollReveal>
 
@@ -118,7 +118,7 @@ export default function BranninspeksjonPage() {
                   {[
                     { title: 'Inspeksjon', desc: 'Grundig gjennomgang av hele bygningen — fellesarealer, rømningsveier, tekniske installasjoner og konstruksjoner.' },
                     { title: 'Tilstandsrapport', desc: 'Skriftlig rapport med oversikt over avvik og mangler, rangert etter alvorlighetsgrad.' },
-                    { title: 'Handlingsplan', desc: 'Konkrete anbefalinger for utbedring, med kostnadsestimat og prioritering av tiltak.' },
+                    { title: 'Handlingsplan', desc: 'Konkrete anbefalinger for utbedring, med prioritering av tiltak og hva som må dokumenteres overfor Bergen brannvesen.' },
                     { title: 'Internkontrollrutiner', desc: 'Hjelp til å etablere gode rutiner for løpende brannforebygging og dokumentasjon.' },
                   ].map((item, i) => (
                     <div key={i} className="bg-brand-lightgray rounded-[20px] p-5">

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FileText, Phone, Mail, CheckCircle } from 'lucide-react'
@@ -14,39 +14,44 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
-    question: 'Hva trenger jeg til mitt prosjekt — brannkonsept eller brannteknisk notat?',
+    question: 'Hva er forskjellen på brannkonsept og brannteknisk notat?',
     answer:
-      'Et brannkonsept er en mer helhetlig rapport som beskriver brannsikkerhetsnivået til hele byggverket. Et brannteknisk notat er enklere og brukes for mindre tiltak. Vi veileder deg til riktig løsning for ditt prosjekt — ta kontakt for en gratis vurdering.',
+      'Et brannteknisk notat brukes for enkle tiltak der kommunen ikke krever full prosjektering. For de fleste søknadspliktige byggesaker — tilbygg, bruksendring, nybygg — kreves et komplett brannkonsept. Vi veileder deg på hva som passer ditt prosjekt.',
   },
   {
-    question: 'Er befaring nødvendig for brannkonsept?',
+    question: 'Gjelder det spesielle brannkrav for eldre trehus i Bergen?',
     answer:
-      'For nybygg og enklere saker er det sjelden nødvendig med befaring. Takket være digitale kartdata og gode tegningsunderlag kan vi i mange tilfeller utarbeide brannkonseptet uten fysisk befaring. Vi gir beskjed dersom vi ser behov for det.',
+      'Ja. Bergen har mange eldre trebygninger, særlig i Sandviken, på Nordnes og i kvartalene rundt Bryggen. Disse stiller særskilte krav til branncelleinndeling og rømningsveier siden de ikke er bygget etter dagens regelverk. Vi har erfaring med slike bygg og vet hva Bergen kommune forventer av dokumentasjonen.',
   },
   {
     question: 'Hva koster et brannkonsept i Bergen?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris slik at du slipper ubehagelige overraskelser. Send oss informasjon om prosjektet for et nøyaktig tilbud.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris — du vet hva det koster før vi starter. Send oss tegninger og prosjektbeskrivelse, så har du tilbud innen 24 timer.',
   },
   {
-    question: 'Tilbyr dere håndverkertjenester?',
+    question: 'Kan dere erklære ansvarsrett overfor Bergen kommune?',
     answer:
-      'Nei — vi er en nøytral rådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen vår alltid er uavhengig og i ditt beste interesse.',
+      'Ja. Vi er sentralt godkjent for brannprosjektering i tiltaksklasse 1 og 2, og kan erklære ansvarsrett direkte overfor Bergen kommune i byggesaken.',
   },
   {
-    question: 'Hva trengs for å få et pristilbud?',
+    question: 'Er befaring nødvendig?',
     answer:
-      'For å gi et nøyaktig tilbud trenger vi: adresse/matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort prosjektbeskrivelse. Send dette til oss så sender vi tilbud innen 24 timer.',
+      'For nybygg og de fleste tilbygg er befaring sjelden nødvendig. Med digitale kartdata, tegningsunderlag og bilder kan vi utarbeide brannkonseptet uten å besøke eiendommen. For eldre vernede bygg eller kompliserte planløsninger kan vi avtale befaring om nødvendig.',
   },
   {
-    question: 'Hvor lang tid tar det å utarbeide et brannkonsept?',
+    question: 'Hva trenger dere fra meg for å gi tilbud?',
     answer:
-      'Leveringstid avhenger av prosjektets omfang og vår arbeidsbelastning. For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt bestilling og komplett underlag. Har du tidsfrist, oppgi dette i forespørselen.',
+      'Vi trenger adresse eller matrikkel, antall etasjer og bruksareal, tegninger (situasjonsplan og plantegninger) og en kort beskrivelse av hva du skal gjøre. Send det på e-post, så svarer vi med fastpristilbud innen 24 timer.',
+  },
+  {
+    question: 'Hvor raskt kan brannkonseptet leveres?',
+    answer:
+      'For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt komplett underlag. Har du en spesifikk tidsfrist mot kommunen, oppgi den i forespørselen — vi er fleksible.',
   },
   {
     question: 'Tar dere oppdrag utenfor Bergen?',
     answer:
-      'Ja — vi har base i Bergen, men tar oppdrag i hele Hordaland, Vestland og resten av Norge. Takket være digitale verktøy og kartdata trenger vi sjelden å besøke prosjektstedet fysisk, noe som gjør det enkelt å betjene kunder over hele landet. Ta kontakt uansett hvor prosjektet ditt befinner seg.',
+      'Ja — vi er basert i Bergen, men tar oppdrag i hele Hordaland, Vestland og resten av Norge. Takket være digitale verktøy og kartdata trenger vi sjelden å besøke prosjektstedet fysisk. Ta kontakt uansett hvor prosjektet ditt befinner seg.',
   },
   {
     question: 'Hva bør jeg vite om brannkonsept før jeg bestiller?',
@@ -123,9 +128,9 @@ export default function BrannkonseptPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inneholder et brannkonsept?</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva inngår i brannkonseptet?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-6">
-                  Et komplett brannkonsept fra Brannkonsult AS inneholder:
+                  Et brannkonsept dokumenterer at bygget oppfyller kravene i TEK17. Vi leverer et komplett søknadsklart dokument som Bergen kommune kan godkjenne direkte:
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
@@ -146,9 +151,12 @@ export default function BrannkonseptPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Brannklasser og risikoklasser</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Risikoklasse — hva gjelder for ditt bygg?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Alle bygninger i Norge klassifiseres etter risikoklasse (RKL 1–6) og brannklasse (BKL 1–4). Risikoklassen bestemmes av hva bygget brukes til og hvilke konsekvenser en brann kan ha. Brannklassen fastsettes ut fra risikoklasse og antall etasjer.
+                  Alle bygninger klassifiseres etter risikoklasse (RKL 1–6) og brannklasse (BKL 1–4). Risikoklassen bestemmes av hva bygget brukes til og hvilke konsekvenser en brann kan ha for personene som oppholder seg der.
+                </p>
+                <p className="text-brand-darkgray leading-relaxed mb-4">
+                  I Bergen er det mange byggesaker som gjelder bruksendring i eldre bygårder — for eksempel ombygging av næringslokaler til bolig, eller etablering av ny leilighet i et eksisterende bygg. Disse utløser som regel RKL 2 og brannklasse 2.
                 </p>
                 <div className="bg-brand-lightgray rounded-[20px] p-6 mb-8">
                   <h3 className="font-bold text-brand-black mb-3">Eksempler på risikoklasser:</h3>
@@ -163,14 +171,18 @@ export default function BrannkonseptPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Erfaring fra Bergen og Hordaland</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-6">
+                  Siden 2013 har vi jobbet med over 1 200 brannprosjekter — mange av dem i Bergen og Hordaland. Vi kjenner bygningsmassen godt: trehusene i Sandviken og på Nordnes, bygårdene fra tidlig 1900-tall i sentrum, eldre næringsbygg langs havnefronten og nyere leilighetsprosjekter i Åsane og Fana. Det gjør at vi raskt ser hva som er krevende i et prosjekt — og hva som går greit.
+                </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    'Utarbeidelse av komplett brannkonsept',
-                    'Branntekniske tegninger (brannceller, rømningsveier)',
+                    'Erfaring med eldre trebygninger og verneverdige kvartaler',
+                    'Kjennskap til Bergen kommunes krav og saksbehandlingspraksis',
                     'Ansvarsrett overfor kommunen i tiltaksklasse 1 og 2',
-                    'Fastpris — ingen skjulte kostnader',
-                    'Levering innen 5–10 virkedager',
+                    'Fastpris bekreftet skriftlig før vi starter',
+                    'Levering 5–10 virkedager',
+                    'Svar på spørsmål underveis — uten ekstra kostnad',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -207,9 +219,9 @@ export default function BrannkonseptPage() {
               <ScrollReveal delay={200}>
                 <div className="sticky top-24">
                   <div className="bg-brand-dark rounded-[30px] p-8 text-brand-white">
-                    <h3 className="font-bold text-xl mb-3">Få uforpliktende tilbud</h3>
+                    <h3 className="font-bold text-xl mb-3">Send tegningene — få fastpris</h3>
                     <p className="text-brand-white/60 text-sm mb-6 leading-relaxed">
-                      Kontakt oss for en gratis vurdering av ditt brannkonseptbehov. Vi svarer innen 24 timer.
+                      Vi ser på prosjektet ditt og sender fastpristilbud innen 24 timer. Ingen forpliktelser.
                     </p>
                     <Link
                       href="/kontakt-oss"
@@ -265,7 +277,7 @@ export default function BrannkonseptPage() {
         <section className="bg-brand-orange py-14">
           <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-brand-white text-2xl lg:text-3xl font-black mb-4">
-              Kontakt oss for uforpliktende tilbud på brannkonsept i Bergen
+              Send tegningene — vi svarer med fastpris innen 24 timer
             </h2>
             <Link href="/kontakt-oss" className="inline-block bg-brand-white text-brand-black font-bold px-8 py-3.5 rounded-[10px] hover:opacity-90 transition-opacity">
               Få tilbud nå

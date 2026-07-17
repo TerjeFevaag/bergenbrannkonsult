@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle, ShieldCheck } from 'lucide-react'
@@ -22,6 +22,11 @@ const faqItems = [
     question: 'Når er det krav om uavhengig kontroll av brann?',
     answer:
       'Det er krav om UK brann når prosjekteringen av brann utføres i tiltaksklasse 2 (TKL 2) eller høyere, i henhold til SAK10. Dette gjelder de fleste næringsbygg, boligblokker og bygninger med mer enn 2 etasjer.',
+  },
+  {
+    question: 'Gjelder UK-krav også ved rehabilitering av eldre bygninger i Bergen?',
+    answer:
+      'Ja — i mange rehabiliteringsprosjekter i Bergen er tiltaksklasse 2 aktuelt, særlig ved bruksendring av eldre bygårder, etablering av nye boenheter i eksisterende bygningsmasse eller ombygging av næringsbygg. Det betyr at prosjekteringen av brann må gjennomgås av en uavhengig kontrollerende, selv om bygget er gammelt. Vi kjenner saksbehandlingspraksis i Bergen kommune og kan avklare om UK er påkrevd i ditt prosjekt.',
   },
   {
     question: 'Hva koster uavhengig kontroll?',
@@ -108,6 +113,13 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Bergen: rehabilitering og UK i praksis</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-8">
+                  Bergen har en bygningsmasse med mange eldre bygårder og trehus som er i kontinuerlig endring — bruksendringer, nye boenheter i eksisterende bygg og rehabilitering av vernede bygg er hverdagskost. I en del av disse prosjektene er brannprosjekteringen i tiltaksklasse 2, noe som utløser krav om uavhengig kontroll. Vi kjenner Bergens bygningstype og saksbehandlingspraksis og kan raskt avklare om UK er nødvendig i ditt prosjekt — og om brannkonseptet faktisk holder mål.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Hva kontrolleres?</h2>
                 <ul className="space-y-3 mb-8">
                   {[
@@ -127,13 +139,13 @@ export default function UavhengigKontrollPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi leverer</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                   {[
-                    { icon: ShieldCheck, title: 'Uavhengig gjennomgang', desc: 'Grundig kontroll av hele brannkonseptet av en erfaren brannrådgiver.' },
-                    { icon: CheckCircle, title: 'Skriftlig kontrollrapport', desc: 'Detaljert rapport med funn, avvik og anbefalinger.' },
-                    { icon: ShieldCheck, title: 'Erklæring om ansvarsrett', desc: 'Vi erklærer ansvarsrett som uavhengig kontrollerende for brann.' },
-                    { icon: CheckCircle, title: 'Nøytral part', desc: 'Vi selger ingen produkter og har ingen interesser i valg av løsning.' },
+                    { icon: ShieldCheck, title: 'Uavhengig gjennomgang', desc: 'Grundig kontroll av hele brannkonseptet av en erfaren brannrådgiver — uavhengig av den som prosjekterte.' },
+                    { icon: CheckCircle, title: 'Skriftlig kontrollrapport', desc: 'Detaljert rapport med funn, avvik og anbefalinger, klar til å legge ved byggesøknaden.' },
+                    { icon: ShieldCheck, title: 'Erklæring om ansvarsrett', desc: 'Vi erklærer ansvarsrett som uavhengig kontrollerende for brann overfor Bergen kommune.' },
+                    { icon: CheckCircle, title: 'Nøytral part', desc: 'Vi selger ingen produkter og har ingen interesser i valg av løsning — rådgivningen er alltid i din interesse.' },
                   ].map((item, i) => (
                     <div key={i} className="bg-brand-lightgray rounded-[20px] p-5 flex items-start gap-3">
                       <item.icon size={20} className="text-brand-orange shrink-0 mt-0.5" />

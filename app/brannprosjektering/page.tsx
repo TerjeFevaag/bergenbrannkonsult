@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, Mail, CheckCircle } from 'lucide-react'
@@ -24,24 +24,29 @@ const faqItems = [
       'Ja, de fleste tiltak som krever søknad til kommunen utløser også krav om brannprosjektering — dette gjelder tilbygg, påbygg, bruksendring, ny boenhet i eksisterende bygg og bytte av vinduer i brannvegg. Ta kontakt for en gratis vurdering.',
   },
   {
+    question: 'Hva gjelder for eldre bygårder og trehus i Bergen?',
+    answer:
+      'Mange av Bergens eldre bygårder og trehus har planløsninger som ikke uten videre oppfyller dagens krav til branncelleinndeling og rømningsveier. Det betyr ikke at prosjektet er umulig — men det stiller krav til kompetanse hos rådgiver. Vi kjenner denne bygningsmassen og vet hvilke løsninger Bergen kommune aksepterer.',
+  },
+  {
     question: 'Er befaring nødvendig?',
     answer:
       'I de fleste saker er befaring ikke nødvendig. Med digitale kartdata, tegningsunderlag og bilder kan vi utarbeide god brannprosjektering uten å besøke bygget. Vi gir beskjed hvis vi ser behov for befaring.',
   },
   {
-    question: 'Tilbyr dere håndverkertjenester?',
+    question: 'Selger dere produkter eller håndverkertjenester i tillegg?',
     answer:
-      'Nei — vi er en nøytral brannrådgiver og selger ingen produkter eller håndverkertjenester. Dette sikrer at rådgivningen alltid er i ditt beste interesse.',
+      'Nei — vi er utelukkende rådgivere og har ingenting å selge deg utover rapporten. Det betyr at rådgivningen alltid er i din interesse, ikke i vår.',
   },
   {
-    question: 'Hva trengs fra deg for å gi et pristilbud?',
+    question: 'Hva trenger dere fra meg for å gi et tilbud?',
     answer:
       'Vi trenger adresse, antall etasjer og bruksareal, plantegninger og en kort prosjektbeskrivelse. Jo mer informasjon vi får, jo mer presist kan vi prise oppdraget. Send det til oss på e-post eller via kontaktskjemaet.',
   },
   {
     question: 'Tar dere oppdrag utenfor Bergen?',
     answer:
-      'Ja — vi har base i Bergen, men leverer brannprosjektering i hele Hordaland, Vestland og over hele Norge. De fleste oppdrag løses uten befaring takket være digitale tegningsunderlag og kartdata. Kontakt oss uansett hvor prosjektet ditt er.',
+      'Ja — vi er basert i Bergen, men leverer brannprosjektering i hele Hordaland, Vestland og over hele Norge. De fleste oppdrag løses uten befaring takket være digitale tegningsunderlag og kartdata. Kontakt oss uansett hvor prosjektet ditt er.',
   },
 ]
 
@@ -113,11 +118,14 @@ export default function BrannprosjekteringPage() {
 
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Når er det behov for brannprosjektering?</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-4">
+                  De fleste søknadspliktige byggetiltak utløser krav om brannprosjektering. I Bergen er det særlig mange saker som gjelder rehabilitering og bruksendring i eldre bygårder — noe som krever spesiell kunnskap om eksisterende konstruksjoner.
+                </p>
                 <ul className="space-y-3 mb-8">
                   {[
                     'Bytte av vinduer eller dører i brannvegg/seksjoneringsvegg',
                     'Tilbygg eller påbygg på eksisterende bygg',
-                    'Bruksendring (f.eks. garasje til boenhet)',
+                    'Bruksendring (f.eks. næringslokale til leilighet)',
                     'Etablering av ny selvstendig boenhet (utleieenhet)',
                     'Nybygg — boliger, næringsbygg, fritidsboliger',
                     'Rehabilitering av eldre bygg med branntekniske mangler',
@@ -133,20 +141,23 @@ export default function BrannprosjekteringPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Start tidlig — spar penger</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-8">
-                  Jo tidligere i prosjektet du involverer en brannrådgiver, desto enklere og billigere er det å finne gode løsninger. Brannkrav som oppdages sent i prosessen kan kreve dyre konstruksjonsendringer. Vi anbefaler å ta kontakt allerede i skissefasen.
+                  Jo tidligere i prosjektet du involverer en brannrådgiver, desto enklere og billigere er det å finne gode løsninger. Brannkrav som oppdages sent i prosessen kan kreve dyre konstruksjonsendringer. Dette gjelder spesielt ved ombygging av eldre Bergen-bygg, der konstruksjonen ikke alltid er som tegningene viser. Vi anbefaler å ta kontakt allerede i skissefasen.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi tilbyr</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi leverer</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-4">
+                  Du får et komplett, søknadsklart brannkonsept som Bergen kommune kan godkjenne direkte. Vi erklærer ansvarsrett overfor kommunen og er tilgjengelig for spørsmål gjennom hele byggesaken — uten ekstra kostnad.
+                </p>
                 <ul className="space-y-3 mb-8">
                   {[
                     'Brannkonsept og brannteknisk notat',
                     'Branntegninger (brannceller, rømningsveier, seksjoneringer)',
                     'Ansvarsrett overfor kommunen i tiltaksklasse 1 og 2',
-                    'Fastpris — ingen overraskelser',
+                    'Fastpris — bekreftet skriftlig før oppstart',
                     'Levering innen 5–10 virkedager',
-                    'God oppfølging gjennom hele byggesaken',
+                    'Oppfølging gjennom hele byggesaken',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-brand-darkgray">
                       <CheckCircle size={18} className="text-brand-orange shrink-0 mt-0.5" />
@@ -157,7 +168,7 @@ export default function BrannprosjekteringPage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <h2 className="text-brand-black text-2xl font-black mb-4">Hva vi trenger fra deg</h2>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Dette trenger vi fra deg</h2>
                 <ul className="space-y-3 mb-10">
                   {[
                     'Situasjonsplan / adresse',
