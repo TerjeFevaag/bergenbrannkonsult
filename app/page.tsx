@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react'
 import ServiceCard from '@/components/ServiceCard'
 import FAQAccordion from '@/components/FAQAccordion'
-import ReviewCard from '@/components/ReviewCard'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
@@ -19,28 +18,28 @@ const services = [
     iconImage: '/images/icon-brannkonsept.gif',
     title: 'Brannkonsept',
     description:
-      'Kommunen krever et brannkonsept ved de fleste byggesaker. Vi utarbeider helhetlige brannkonsept som ivaretar brannsikkerheten i ditt prosjekt — fra garasjer til leilighetsbygg.',
+      'Bergen kommune krever brannkonsept ved de fleste søknadspliktige byggesaker. Vi kjenner bygningsmassen — fra eldre trehus i Sandviken til nybygg i Åsane — og leverer søknadsklart dokument til fastpris.',
     href: '/brannkonsept',
   },
   {
     iconImage: '/images/icon-brannprosjektering.gif',
     title: 'Brannprosjektering',
     description:
-      'Vi sørger for at bygget ditt oppfyller alle krav til brannsikkerhet, og finner praktiske løsninger som sparer både tid og kostnader. Fast pris der det er mulig.',
+      'Tilbygg, bruksendring eller rehabilitering av eldre bygård? Vi utarbeider komplett brannprosjektering med ansvarsrett overfor Bergen kommune. Fastpris fra kr 15 000, levering 5–10 virkedager.',
     href: '/brannprosjektering',
   },
   {
     iconImage: '/images/icon-branntilsyn.png',
     title: 'Branninspeksjon',
     description:
-      'Har du fått pålegg etter branntilsyn, eller ønsker du en grundig gjennomgang av byggets brannsikkerhet? Vi inspiserer hele bygningen og utarbeider tilstandsrapport.',
+      'Fått pålegg fra Bergen brannvesen, eller ønsker du en grundig gjennomgang av byggets brannsikkerhet? Vi inspiserer hele bygningen og leverer tilstandsrapport med handlingsplan.',
     href: '/branninspeksjon',
   },
   {
     iconImage: '/images/icon-uavhengig-kontroll.png',
     title: 'Uavhengig kontroll',
     description:
-      'I mange byggeprosjekter er det krav om uavhengig kontroll av brannsikkerheten. Vi sikrer at brannkonseptet er i tråd med gjeldende forskrifter.',
+      'Prosjektering i tiltaksklasse 2 utløser krav om uavhengig kontroll av brann. Vi gjennomgår brannkonseptet mot TEK17 og erklærer ansvarsrett som uavhengig kontrollerende overfor kommunen.',
     href: '/uavhengig-kontroll',
   },
 ]
@@ -64,37 +63,13 @@ const steps = [
 ]
 
 const stats = [
-  { number: '1200+', label: 'Prosjekter gjennomført' },
+  { number: '1200+', label: 'Prosjekter siden 2013' },
   { number: 'TKL 1+2', label: 'Sentralt godkjent' },
-  { number: 'Fast pris', label: 'Der det er mulig' },
-  { number: 'Hele landet', label: 'Vi tar oppdrag overalt' },
+  { number: 'Fast pris', label: 'Alltid bekreftet skriftlig' },
+  { number: '5–10', label: 'Virkedager — standard levering' },
 ]
 
-const reviews = [
-  {
-    quote:
-      'Jeg fikk hjelp med en ny boenhet i Bergen Sentrum. Rask tilbakemelding og grundig rapport. Anbefaler andre å bruke Brannkonsult AS!',
-    author: 'Jan-David Antonsen',
-    company: 'Anton Arkitekt AS',
-  },
-  {
-    quote:
-      'Raskt svar, relevant og grundig rapport, kommunen likte måten det var gjort på. Ny oppdatert rapport innen kort tid. Alt til bra priser.',
-    author: 'Vegard Hals',
-  },
-  {
-    quote:
-      'Brannkonsult AS er lette å samarbeide med, de svarer raskt, finner gode løsninger og leverer arbeid av jevnt høy kvalitet. Brannotatene deres er praktiske og enkle å bruke.',
-    author: 'Daniel Hagelin',
-    company: 'Hagelin Byggservice',
-  },
-  {
-    quote:
-      'Brannkonsult AS er faglig dyktige, ryddige og løsningsorienterte. Det er viktig for oss som arkitekter og for våre kunder.',
-    author: 'Jon Cederbrand',
-    company: 'Jon Cederbrand Arkitektur AS',
-  },
-]
+// Testimonials fjernet — erstattet med tillit-seksjon nedenfor
 
 const faqItems = [
   {
@@ -164,14 +139,13 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-brand-black/80 via-brand-black/60 to-brand-black/30" />
         <div className="relative z-10 w-full max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <p className="hero-1 font-accent text-brand-orange text-xl lg:text-2xl mb-4">
-            Vi hjelper deg med brannprosjektering i Bergen og Hordaland
+            Brannrådgiver i Bergen — vi kjenner bygningsmassen
           </p>
           <h1 className="hero-2 text-brand-white text-4xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6 max-w-2xl">
-            Brannprosjektering i Bergen
+            Brannprosjektering i Bergen og Hordaland
           </h1>
           <p className="hero-3 text-brand-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
-            Sentralt godkjent foretak med over 1200 gjennomførte prosjekter. Fast pris, rask
-            levering og personlig oppfølging — fra enkle tilbygg til store leilighetsbygg.
+            Vi hjelper private, arkitekter og entreprenører med brannkonsept, brannprosjektering og branninspeksjon — fra eldre trehus i Sandviken til nybygg på Mindemyren. Sentralt godkjent, fastpris, levering 5–10 virkedager.
           </p>
           <div className="hero-4 flex flex-wrap gap-4 mb-10">
             <Link
@@ -256,17 +230,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── REVIEWS ── */}
+      {/* ── HVORFOR VELGE OSS ── */}
       <section className="py-16 lg:py-24 bg-brand-lightgray">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center mb-12">
-            <p className="font-accent text-brand-orange text-xl mb-2">Kundene våre sier</p>
-            <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Hva sier kundene?</h2>
+            <p className="font-accent text-brand-orange text-xl mb-2">Hvorfor velge oss?</p>
+            <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Vi kjenner Bergen</h2>
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {reviews.map((r, i) => (
-              <ScrollReveal key={i} delay={i * 80}>
-                <ReviewCard {...r} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Lokalkunnskap',
+                body: 'Vi kjenner Bergens bygningstype — trehusene i Sandviken og på Nordnes, de eldre bygårdene i sentrum, og de nye utviklingsprosjektene i Åsane og Fana. Det gir raskere og bedre løsninger for ditt prosjekt.',
+              },
+              {
+                title: 'Bergen kommunes krav',
+                body: 'Vi kjenner Bergen kommunes saksbehandlingspraksis og vet hva de forventer av dokumentasjonen. Brannkonseptet vi leverer er tilpasset kommunens krav og kan godkjennes direkte.',
+              },
+              {
+                title: 'Nøytral rådgiver',
+                body: 'Vi selger ingen produkter og har ingenting å tjene på valg av løsning. Rådgivningen er alltid i din interesse — vi gir deg den mest hensiktsmessige og kostnadseffektive brannsikringen.',
+              },
+            ].map((item, i) => (
+              <ScrollReveal key={i} delay={i * 100}>
+                <div className="bg-brand-white rounded-[20px] p-7 h-full">
+                  <h3 className="font-bold text-brand-black text-lg mb-3">{item.title}</h3>
+                  <p className="text-brand-darkgray leading-relaxed text-sm">{item.body}</p>
+                </div>
               </ScrollReveal>
             ))}
           </div>
