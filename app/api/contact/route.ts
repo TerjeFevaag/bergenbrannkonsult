@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
   }
 
   const body = await req.json()
-  const { navn, epost, telefon, prosjekttype, melding } = body
+  const { navn, epost, telefon, prosjekttype, melding, vedlegg } = body
 
   if (!navn || !epost || !melding) {
     return NextResponse.json({ error: 'Mangler påkrevde felt' }, { status: 400 })
@@ -25,6 +25,17 @@ export async function POST(req: NextRequest) {
     annet: 'Annet',
   }
 
+  type Vedlegg = { name: string; url: string; size: number }
+  const vedleggListe: Vedlegg[] = Array.isArray(vedlegg) ? vedlegg : []
+
+  const vedleggHtml = vedleggListe.length
+    ? `<tr><td valign="top"><strong>Vedlegg:</strong></td><td>${vedleggListe.map(v => `<a href="${v.url}">${v.name}</a>`).join('<br>')}</td></tr>`
+    : ''
+
+  const vedleggText = vedleggListe.length
+    ? `\nVedlegg:\n${vedleggListe.map(v => `- ${v.name}: ${v.url}`).join('\n')}`
+    : ''
+
   const html = `
     <h2>Ny henvendelse fra bergenbrannkonsult.no</h2>
     <table cellpadding="6" style="border-collapse:collapse">
@@ -33,6 +44,7 @@ export async function POST(req: NextRequest) {
       ${telefon ? `<tr><td><strong>Telefon:</strong></td><td>${telefon}</td></tr>` : ''}
       ${prosjekttype ? `<tr><td><strong>Prosjekttype:</strong></td><td>${prosjekttypeLabel[prosjekttype] ?? prosjekttype}</td></tr>` : ''}
       <tr><td valign="top"><strong>Melding:</strong></td><td>${melding.replace(/\n/g, '<br>')}</td></tr>
+      ${vedleggHtml}
     </table>
   `
 
@@ -42,6 +54,7 @@ export async function POST(req: NextRequest) {
     telefon ? `Telefon: ${telefon}` : null,
     prosjekttype ? `Prosjekttype: ${prosjekttypeLabel[prosjekttype] ?? prosjekttype}` : null,
     `Melding:\n${melding}`,
+    vedleggText || null,
   ].filter(Boolean).join('\n')
 
   const res = await fetch('https://api.mailersend.com/v1/email', {
