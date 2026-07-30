@@ -63,7 +63,7 @@ const steps = [
 ]
 
 const stats = [
-  { number: '1200+', label: 'Prosjekter siden 2013' },
+  { number: '1500+', label: 'Prosjekter siden 2013' },
   { number: 'TKL 1+2', label: 'Sentralt godkjent' },
   { number: 'Fast pris', label: 'Alltid bekreftet skriftlig' },
   { number: '5–10', label: 'Virkedager — standard levering' },

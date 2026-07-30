@@ -59,7 +59,7 @@ export default function OmOssPage() {
                 Vi er et spesialisert brannprosjekteringsfirma med base i Bergen, og vi tar oppdrag over hele landet. Vår virksomhet har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-5">
-                Siden oppstart i 2013 har vi vært involvert i over 1200 forskjellige brannprosjekter — fra små garasjer og enkle tilbygg til store leilighetsbygg og næringseiendommer.
+                Siden oppstart i 2013 har vi vært involvert i over 1500 forskjellige brannprosjekter — fra små garasjer og enkle tilbygg til store leilighetsbygg og næringseiendommer.
               </p>
               <p className="text-brand-darkgray leading-relaxed mb-8">
                 Vi har god kjennskap til Bergens særegne bygningsmasse — fra de historiske trehusene på Bryggen og i Sandviken, til moderne leilighetsbygg på Danmarksplass og Mindemyren. Bergen er kjent for sin eldre bebyggelse som stiller spesielle krav til brannteknisk dokumentasjon. Vi leverer brannkonsept og brannprosjektering til arkitekter, utbyggere og privatpersoner i hele Hordaland.
@@ -68,7 +68,7 @@ export default function OmOssPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { number: '2013', label: 'Etablert' },
-                  { number: '1200+', label: 'Prosjekter' },
+                  { number: '1500+', label: 'Prosjekter' },
                   { number: 'TKL 1+2', label: 'Godkjenning' },
                   { number: '5', label: 'Brannrådgivere' },
                 ].map((stat, i) => (
