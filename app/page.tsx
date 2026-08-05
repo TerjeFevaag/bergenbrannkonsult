@@ -71,29 +71,29 @@ const stats = [
 
 const faqItems = [
   {
-    question: 'Hva koster brannprosjektering i Bergen?',
+    question: 'Hva koster et brannkonsept i Bergen?',
     answer:
-      'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger og all dokumentasjon klar til byggesøknaden. Vi gir alltid fastpris skriftlig før vi starter — ingen timepris, ingen overraskelser på fakturaen.',
   },
   {
-    question: 'Trenger jeg brannprosjektering for mitt prosjekt?',
+    question: 'Hva trenger Bergen kommune av brannteknisk dokumentasjon?',
     answer:
-      'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt.',
+      'Bergen kommune krever som regel et komplett brannkonsept ved tilbygg, bruksendring, ny selvstendig boenhet og nybygg. Vi leverer søknadsklart dokument med branntegninger og erklærer ansvarsrett direkte overfor kommunen — du trenger ikke gjøre noe mer enn å legge det ved søknaden.',
   },
   {
-    question: 'Er befaring nødvendig?',
+    question: 'Gjelder det spesielle krav for eldre trehus og bygårder i Bergen?',
     answer:
-      'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata kan vi i mange tilfeller jobbe uten fysisk befaring.',
+      'Ja. Eldre trebygninger og bygårder fra tidlig 1900-tall har ofte planløsninger som ikke oppfyller dagens krav til branncelleinndeling og rømningsveier. Det betyr ikke at prosjektet er umulig — men det krever erfaring med denne typen bygg. Vi kjenner den Bergen-spesifikke bygningsmassen og vet hva kommunen aksepterer av løsninger.',
   },
   {
-    question: 'Er dere sentralt godkjent?',
+    question: 'Utfører dere branninspeksjon fysisk i Bergen?',
     answer:
-      'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.',
+      'Ja — branninspeksjon utfører vi fysisk på stedet. Vi møter opp, går gjennom bygget systematisk og leverer skriftlig tilstandsrapport med avvik og handlingsplan. Dette gjelder borettslag, sameier og næringsbygg i Bergen og Hordaland.',
   },
   {
-    question: 'Tar dere oppdrag utenfor Bergen?',
+    question: 'Er dere sentralt godkjent og kan dere ta ansvarsrett?',
     answer:
-      'Vi hjelper kunder i Bergen, Hordaland og hele Vestland, og tar oppdrag over hele landet. Kontakt oss uansett hvor i Norge prosjektet ditt er.',
+      'Ja. Vi har sentral godkjenning fra DiBK for brannprosjektering i tiltaksklasse 1 og 2, og kan erklære ansvarsrett overfor Bergen kommune i byggesaken. Godkjenningen dokumenterer faglig kompetanse, ansvarsforsikring og godkjent kvalitetssystem.',
   },
 ]
 
