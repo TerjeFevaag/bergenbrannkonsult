@@ -146,16 +146,16 @@ export default function OmOssPage() {
         </div>
       </section>
 
-      {/* Nøytral rådgiver */}
+      {/* Hva vi faktisk leverer */}
       <section className="py-16 lg:py-24 bg-brand-lightgray">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="max-w-3xl">
-            <h2 className="text-brand-black text-3xl font-black mb-5">Vi selger ingenting — bare råd</h2>
+            <h2 className="text-brand-black text-3xl font-black mb-5">Hva vi faktisk leverer</h2>
             <p className="text-brand-darkgray leading-relaxed mb-4">
-              Brannkonsult AS tilbyr utelukkende rådgivning. Vi selger ingen branntekniske produkter, utfører ingen håndverkertjenester og har ingen kommersielle interesser i hvilke løsninger du velger. Det betyr at rådet vi gir alltid er i ditt beste interesse — ikke i vår.
+              Vi er ikke bare rådgivere — vi leverer komplette, søknadsklare dokumenter som Bergen kommune kan behandle direkte. Det vil si ferdig brannkonsept, branntegninger og all nødvendig dokumentasjon pakket og klar til å legge ved byggesøknaden. For branninspeksjon møter vi opp fysisk, gjennomgår bygget og leverer en skriftlig tilstandsrapport med handlingsplan.
             </p>
             <p className="text-brand-darkgray leading-relaxed">
-              Mange av våre kunder i Bergen er arkitekter og entreprenører som setter pris på at de kan ringe oss underveis i prosjektet og få svar raskt — uten at det tikker inn på timepris.
+              Det vi ikke gjør er å selge branntekniske produkter eller utføre håndverkertjenester. Det betyr at vi ikke har noe å tjene på hvilke løsninger du velger — rådgivningen er alltid i din interesse. Mange arkitekter og entreprenører i Bergen setter pris på at de kan ta kontakt underveis i prosjektet og få svar raskt, uten at det tikker inn på timepris.
             </p>
           </ScrollReveal>
         </div>
