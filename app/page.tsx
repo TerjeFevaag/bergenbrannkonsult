@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle, ArrowRight, Phone } from 'lucide-react'
 import ServiceCard from '@/components/ServiceCard'
-import ReviewCard from '@/components/ReviewCard'
 import FAQAccordion from '@/components/FAQAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 
@@ -68,15 +67,6 @@ const stats = [
   { number: 'TKL 1+2', label: 'Sentralt godkjent' },
   { number: 'Fast pris', label: 'Alltid bekreftet skriftlig' },
   { number: '5–10', label: 'Virkedager — standard levering' },
-]
-
-const reviews = [
-  {
-    quote: 'Jeg fikk hjelp med en ny boenhet i Bergen Sentrum. Rask tilbakemelding og grundig rapport. Anbefaler andre å bruke Brannkonsult AS!',
-    author: 'Jan-David Antonsen',
-    company: 'Anton Arkitekt AS',
-    date: '11. mai 2026',
-  },
 ]
 
 const faqItems = [
@@ -232,23 +222,6 @@ export default function HomePage() {
                   {stat.number}
                 </div>
                 <div className="text-brand-white text-sm lg:text-base">{stat.label}</div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── REVIEWS ── */}
-      <section className="py-16 lg:py-24 bg-brand-lightgray">
-        <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="text-center mb-12">
-            <p className="font-accent text-brand-orange text-xl mb-2">Kundene våre sier</p>
-            <h2 className="text-brand-black text-3xl lg:text-4xl font-black">Hva sier kundene?</h2>
-          </ScrollReveal>
-          <div className="max-w-xl mx-auto">
-            {reviews.map((r, i) => (
-              <ScrollReveal key={i}>
-                <ReviewCard {...r} />
               </ScrollReveal>
             ))}
           </div>
