@@ -34,9 +34,9 @@ const faqItems = [
       'Ja. Vi er sentralt godkjent for brannprosjektering i tiltaksklasse 1 og 2, og kan erklære ansvarsrett direkte overfor Bergen kommune i byggesaken.',
   },
   {
-    question: 'Er befaring nødvendig?',
+    question: 'Er befaring nødvendig for prosjekter i Hordaland?',
     answer:
-      'For nybygg og de fleste tilbygg er befaring sjelden nødvendig. Med digitale kartdata, tegningsunderlag og bilder kan vi utarbeide brannkonseptet uten å besøke eiendommen. For eldre vernede bygg eller kompliserte planløsninger kan vi avtale befaring om nødvendig.',
+      'Sjelden. For nybygg og tilbygg i hele Hordaland — enten det er i Bergen sentrum, på Askøy, i Bjørnafjorden eller på Osterøy — holder det som regel med tegninger, kartdata og bilder. For eldre vernede bygg uten oppdatert tegningsgrunnlag kan befaring være nødvendig, og vi avtaler det i så fall som en del av oppdraget.',
   },
   {
     question: 'Hva trenger dere fra meg for å gi tilbud?',
@@ -49,9 +49,9 @@ const faqItems = [
       'For de fleste prosjekter leverer vi innen 5–10 virkedager etter mottatt komplett underlag. Har du en spesifikk tidsfrist mot kommunen, oppgi den i forespørselen — vi er fleksible.',
   },
   {
-    question: 'Tar dere oppdrag utenfor Bergen?',
+    question: 'Dekker dere hele Hordaland?',
     answer:
-      'Ja — vi er basert i Bergen, men tar oppdrag i hele Hordaland, Vestland og resten av Norge. Takket være digitale verktøy og kartdata trenger vi sjelden å besøke prosjektstedet fysisk. Ta kontakt uansett hvor prosjektet ditt befinner seg.',
+      'Ja — vi leverer brannkonsept til hele Hordaland. Vi tar jevnlig oppdrag i Askøy, Bjørnafjorden (tidl. Os og Fusa), Alver, Osterøy, Voss, Samnanger, Kvam og resten av regionen. Takket være digitale kartdata og tegningsunderlag trenger vi sjelden å besøke prosjektstedet fysisk — avstand er ikke et hinder.',
   },
   {
     question: 'Hva bør jeg vite om brannkonsept før jeg bestiller?',

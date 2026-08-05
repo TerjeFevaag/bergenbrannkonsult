@@ -29,9 +29,9 @@ const faqItems = [
       'Mange av Bergens eldre bygårder og trehus har planløsninger som ikke uten videre oppfyller dagens krav til branncelleinndeling og rømningsveier. Det betyr ikke at prosjektet er umulig — men det stiller krav til kompetanse hos rådgiver. Vi kjenner denne bygningsmassen og vet hvilke løsninger Bergen kommune aksepterer.',
   },
   {
-    question: 'Er befaring nødvendig?',
+    question: 'Er befaring nødvendig for prosjekter i Bergen og Hordaland?',
     answer:
-      'I de fleste saker er befaring ikke nødvendig. Med digitale kartdata, tegningsunderlag og bilder kan vi utarbeide god brannprosjektering uten å besøke bygget. Vi gir beskjed hvis vi ser behov for befaring.',
+      'I de fleste saker er befaring ikke nødvendig — heller ikke for prosjekter utenfor Bergen sentrum. For tilbygg og bruksendringer i Askøy, Osterøy, Bjørnafjorden og Voss leverer vi på samme måte som i Bergen: digitalt, basert på tegninger og kartdata. Vi gir beskjed hvis vi ser at en befaring er nødvendig, og det er i så fall inkludert i fastprisen.',
   },
   {
     question: 'Selger dere produkter eller håndverkertjenester i tillegg?',
@@ -44,9 +44,9 @@ const faqItems = [
       'Vi trenger adresse, antall etasjer og bruksareal, plantegninger og en kort prosjektbeskrivelse. Jo mer informasjon vi får, jo mer presist kan vi prise oppdraget. Send det til oss på e-post eller via kontaktskjemaet.',
   },
   {
-    question: 'Tar dere oppdrag utenfor Bergen?',
+    question: 'Dekker dere hele Hordaland?',
     answer:
-      'Ja — vi er basert i Bergen, men leverer brannprosjektering i hele Hordaland, Vestland og over hele Norge. De fleste oppdrag løses uten befaring takket være digitale tegningsunderlag og kartdata. Kontakt oss uansett hvor prosjektet ditt er.',
+      'Ja — vi leverer brannprosjektering i hele Hordaland. Vi tar jevnlig oppdrag i Askøy, Bjørnafjorden, Alver, Osterøy, Voss, Kvam og Samnanger, i tillegg til Bergen. De fleste prosjekter løses digitalt uten befaring. Ta kontakt uansett hvor i regionen prosjektet befinner seg.',
   },
 ]
 

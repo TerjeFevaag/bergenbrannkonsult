@@ -19,9 +19,9 @@ const faqItems = [
       'Uavhengig kontroll (UK) er en obligatorisk kvalitetssikring der en uavhengig part kontrollerer at brannprosjekteringen er utført i henhold til gjeldende forskrifter. Kontrollen utføres av et firma uten tilknytning til det som har prosjektert.',
   },
   {
-    question: 'Når er det krav om uavhengig kontroll av brann?',
+    question: 'Når er det krav om uavhengig kontroll i Hordaland?',
     answer:
-      'Det er krav om UK brann når prosjekteringen av brann utføres i tiltaksklasse 2 (TKL 2) eller høyere, i henhold til SAK10. Dette gjelder de fleste næringsbygg, boligblokker og bygninger med mer enn 2 etasjer.',
+      'Det er krav om UK brann når prosjekteringen av brann utføres i tiltaksklasse 2 (TKL 2) eller høyere, i henhold til SAK10. Dette gjelder de fleste næringsbygg, boligblokker og bygninger med mer enn 2 etasjer — uavhengig av om prosjektet er i Bergen, Askøy, Bjørnafjorden eller andre kommuner i Hordaland. Alle kommuner i regionen følger samme nasjonale krav.',
   },
   {
     question: 'Gjelder UK-krav også ved rehabilitering av eldre bygninger i Bergen?',
@@ -39,9 +39,9 @@ const faqItems = [
       'Ja — det er faktisk et krav at den som utfører UK ikke er den samme som har prosjektert. Vi kan ta på oss uavhengig kontroll av brannkonsept utarbeidet av andre rådgivere.',
   },
   {
-    question: 'Tar dere oppdrag utenfor Bergen?',
+    question: 'Dekker dere hele Hordaland for UK brann?',
     answer:
-      'Ja — vi har base i Bergen, men utfører uavhengig kontroll for prosjekter i hele Hordaland og over hele Norge. Kontrollarbeidet baseres på oversendte tegninger og dokumenter, noe som gjør det enkelt å gjennomføre uten geografiske begrensninger. Ta kontakt uansett hvor prosjektet ditt befinner seg.',
+      'Ja — vi utfører uavhengig kontroll for prosjekter i hele Hordaland: Bergen, Askøy, Alver, Osterøy, Bjørnafjorden, Voss og øvrige kommuner i regionen. Kontrollarbeidet baseres på oversendte tegninger og dokumentasjon, så avstand er ikke et hinder. Vi tar også oppdrag over hele Norge.',
   },
   {
     question: 'Hvor finner jeg mer faglig informasjon om uavhengig kontroll av brann?',

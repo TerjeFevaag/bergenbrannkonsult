@@ -68,9 +68,9 @@ const faqItems = [
       'Det finnes en utfyllende faglig gjennomgang av hva en branninspeksjon innebærer, hva som kontrolleres og hva du kan forvente av rapporten. Se <a href="https://www.brannkonsult.no/branninspeksjon/" class="text-brand-orange hover:underline">fagartikkelen om branninspeksjon</a> for mer informasjon.',
   },
   {
-    question: 'Utfører dere branninspeksjon utenfor Bergen?',
+    question: 'Utfører dere branninspeksjon i hele Hordaland?',
     answer:
-      'Ja — vi er basert i Bergen, men utfører branninspeksjon i hele Hordaland og tar oppdrag over hele Norge. Ta kontakt uansett hvor bygget befinner seg, så vurderer vi den beste fremgangsmåten.',
+      'Ja — vi utfører fysisk branninspeksjon i hele Hordaland. Vi møter opp på stedet i Bergen, Askøy, Bjørnafjorden, Alver, Osterøy og Voss, og tar oppdrag ellers i Norge ved behov. Ta kontakt uansett hvor bygget befinner seg.',
   },
 ]
 
