@@ -71,29 +71,29 @@ const stats = [
 
 const faqItems = [
   {
-    question: 'Hva koster et brannkonsept i Bergen?',
+    question: 'Hva koster et brannkonsept i Bergen og Hordaland?',
     answer:
-      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger og all dokumentasjon klar til byggesøknaden. Vi gir alltid fastpris skriftlig før vi starter — ingen timepris, ingen overraskelser på fakturaen.',
+      'Et brannkonsept i tiltaksklasse 2 starter fra ca. 15 000 kr ekskl. mva., inkludert branntegninger og all dokumentasjon klar til byggesøknaden. Prisen er den samme uavhengig av om prosjektet er i Bergen sentrum, Askøy, Voss eller Os. Vi gir alltid fastpris skriftlig før vi starter — ingen timepris, ingen overraskelser.',
   },
   {
-    question: 'Hva trenger Bergen kommune av brannteknisk dokumentasjon?',
+    question: 'Hva krever kommunen av brannteknisk dokumentasjon?',
     answer:
-      'Bergen kommune krever som regel et komplett brannkonsept ved tilbygg, bruksendring, ny selvstendig boenhet og nybygg. Vi leverer søknadsklart dokument med branntegninger og erklærer ansvarsrett direkte overfor kommunen — du trenger ikke gjøre noe mer enn å legge det ved søknaden.',
+      'Kommunene i Hordaland — inkludert Bergen, Askøy, Bjørnafjorden, Alver og Osterøy — krever som regel et komplett brannkonsept ved tilbygg, bruksendring, ny selvstendig boenhet og nybygg. Vi leverer søknadsklart dokument med branntegninger og erklærer ansvarsrett direkte overfor din kommune.',
   },
   {
     question: 'Gjelder det spesielle krav for eldre trehus og bygårder i Bergen?',
     answer:
-      'Ja. Eldre trebygninger og bygårder fra tidlig 1900-tall har ofte planløsninger som ikke oppfyller dagens krav til branncelleinndeling og rømningsveier. Det betyr ikke at prosjektet er umulig — men det krever erfaring med denne typen bygg. Vi kjenner den Bergen-spesifikke bygningsmassen og vet hva kommunen aksepterer av løsninger.',
+      'Ja. Eldre trebygninger og bygårder fra tidlig 1900-tall har ofte planløsninger som ikke oppfyller dagens krav til branncelleinndeling og rømningsveier. Det betyr ikke at prosjektet er umulig — men det krever erfaring med denne typen bygg. Vi kjenner bygningsmassen i Bergen og omegn og vet hva kommunen aksepterer av løsninger.',
   },
   {
-    question: 'Utfører dere branninspeksjon fysisk i Bergen?',
+    question: 'Utfører dere branninspeksjon fysisk i Bergen og Hordaland?',
     answer:
-      'Ja — branninspeksjon utfører vi fysisk på stedet. Vi møter opp, går gjennom bygget systematisk og leverer skriftlig tilstandsrapport med avvik og handlingsplan. Dette gjelder borettslag, sameier og næringsbygg i Bergen og Hordaland.',
+      'Ja — branninspeksjon utfører vi fysisk på stedet i hele Hordaland. Vi møter opp, går gjennom bygget systematisk og leverer skriftlig tilstandsrapport med avvik og handlingsplan. Dette gjelder borettslag, sameier og næringsbygg i Bergen, Askøy, Osterøy, Bjørnafjorden og resten av regionen.',
   },
   {
     question: 'Er dere sentralt godkjent og kan dere ta ansvarsrett?',
     answer:
-      'Ja. Vi har sentral godkjenning fra DiBK for brannprosjektering i tiltaksklasse 1 og 2, og kan erklære ansvarsrett overfor Bergen kommune i byggesaken. Godkjenningen dokumenterer faglig kompetanse, ansvarsforsikring og godkjent kvalitetssystem.',
+      'Ja. Vi har sentral godkjenning fra DiBK for brannprosjektering i tiltaksklasse 1 og 2, og kan erklære ansvarsrett overfor alle kommuner i Hordaland. Godkjenningen dokumenterer faglig kompetanse, ansvarsforsikring og godkjent kvalitetssystem.',
   },
 ]
 
