@@ -1,7 +1,17 @@
 import { handleUpload, type HandleUploadBody } from '@vercel/blob/client'
 import { NextRequest, NextResponse } from 'next/server'
 
+const ALLOWED_ORIGINS = [
+  'https://www.bergenbrannkonsult.no',
+  'https://bergenbrannkonsult.no',
+]
+
 export async function POST(req: NextRequest): Promise<NextResponse> {
+  const origin = req.headers.get('origin') ?? ''
+  if (!ALLOWED_ORIGINS.includes(origin) && process.env.NODE_ENV !== 'development') {
+    return NextResponse.json({ error: 'Ikke tillatt' }, { status: 403 })
+  }
+
   const body = (await req.json()) as HandleUploadBody
 
   try {
@@ -15,7 +25,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
           'image/png',
           'image/gif',
           'image/webp',
-          'application/octet-stream',
           'application/msword',
           'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
         ],
